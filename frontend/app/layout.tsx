@@ -1,15 +1,16 @@
 import "./globals.css";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Airline Infrastructure",
-  description: "Airline Infrastructure Platform",
+export const metadata: Metadata = {
+  title: "Journey Planner",
+  description: "Map-based travel planning platform"
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>

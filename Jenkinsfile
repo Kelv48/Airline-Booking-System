@@ -16,11 +16,12 @@ pipeline {
         }
 
 
-        stage('Build Image') {
+        stage('Build Frontend Image') {
             steps {
                 sh '''
                 docker build \
-                -t ${IMAGE_NAME}:latest .
+                -t ${IMAGE_NAME}:latest \
+                ./frontend
                 '''
             }
         }
