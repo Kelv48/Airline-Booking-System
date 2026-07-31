@@ -3,13 +3,17 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <div className="page">
       <Navbar />
-      <Hero />
-      <Features />
+
+      <main className="content">
+        <Hero />
+        <Features />
+      </main>
+
       <Footer />
-    </main>
+    </div>
   );
 }

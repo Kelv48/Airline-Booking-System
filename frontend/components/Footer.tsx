@@ -1,7 +1,24 @@
 export default function Footer() {
-  return (
-    <footer className="border-t border-slate-800 py-8 text-center text-slate-400">
-      © 2026 Journey Planner
-    </footer>
-  );
+    return (
+        <footer
+            className="footer"
+            style={{
+                background: "#f5f7f6",
+                marginTop: "60px",
+            }}
+        >
+            <div
+                className="container"
+                style={{
+                    textAlign: "center",
+                    padding: "30px 0",
+                }}
+            >
+                <p>
+                    © 2026 Journey Planner • Built with Next.js &
+                    FastAPI
+                </p>
+            </div>
+        </footer>
+    );
 }
