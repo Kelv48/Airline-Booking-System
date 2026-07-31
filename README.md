@@ -28,3 +28,7 @@ The application is built into Docker containers and deployed automatically throu
 ## Status
 
 🚧 Active development
+
+## Deployment Test
+
+This update verifies the automated GitHub webhook and Jenkins deployment pipeline.
