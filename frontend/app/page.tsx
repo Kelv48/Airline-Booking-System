@@ -9,8 +9,7 @@ export default function Home() {
       <Navbar />
       <main className="content">
         <Hero />
-        {/* Add a spacer div if the transition feels too abrupt */}
-        <div style={{ height: '60px' }} /> 
+        <div style={{ height: '60px' }} />
         <Features />
       </main>
       <Footer />

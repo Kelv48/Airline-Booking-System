@@ -10,7 +10,6 @@ $color-text-light: #6b7280;
 
 $color-background-white: #ffffff;
 $color-background-light: #f5f7f6;
-
 $color-border: #d7e5dd;
 
 $spacing-sm: 15px;
@@ -90,12 +89,9 @@ button,
     font-weight: 600;
     transition: all 0.2s ease;
     text-decoration: none;
-
-
     &--primary {
         background-color: $color-primary;
         color: $color-background-white;
-
         &:hover {
             background-color: $color-primary-dark;
         }
@@ -113,11 +109,9 @@ button,
     border-radius: 12px;
     box-shadow:
         0 4px 15px rgba(0, 0, 0, 0.03);
-
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
-
     &:hover {
         transform: translateY(-5px);
         box-shadow:
@@ -150,22 +144,14 @@ button,
     position:absolute;
     top:20px;
     left:50px;
-
     width:calc(100% - 100px);
-
     background:rgba(255,255,255,.65);
-
     backdrop-filter:blur(12px);
-
     border-radius:16px;
-
     border:1px solid rgba(0,0,0,.08);
-
     box-shadow:
         0 10px 30px rgba(0,0,0,.12);
-
     padding:20px 40px;
-
     z-index:20;
 }
 
@@ -180,11 +166,9 @@ button,
     display:flex;
     align-items:center;
     gap:8px;
-
     text-decoration:none;
     color:black;
     font-weight:700;
-
     position:relative;
     transition:.2s ease;
 }
@@ -194,10 +178,8 @@ button,
     position:absolute;
     left:0;
     bottom:-6px;
-
     width:0;
     height:2px;
-
     background:$color-primary;
     transition:.2s ease;
 }
@@ -219,18 +201,23 @@ button,
 .navbar__links svg {
     stroke-width:2.5;
 }
-
 .navbar__brand {
     color: white;
-
     font-size: 1.5rem;
     font-weight: 800;
-
     text-shadow:
         0 2px 4px rgba(0,0,0,.7),
         0 4px 12px rgba(0,0,0,.5);
 
     letter-spacing: .02em;
+}
+
+.navbar__brand span {
+    display:block;
+    font-size:.75rem;
+    font-weight:500;
+    opacity:.85;
+    letter-spacing:.05em;
 }
 
 .footer {
@@ -246,7 +233,6 @@ button,
     }
 }
 
-// New Hero & Search sections
 .hero {
     position: relative;
     min-height: 80vh;
@@ -286,7 +272,7 @@ button,
 }
 
 .hero__title {
-    font-size: clamp(2rem, 5vw, 4rem); // Responsive font size
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 800;
     margin-bottom: 1rem;
     color: $color-text-dark;
@@ -308,7 +294,7 @@ button,
     z-index: 1;
 }
 
-// Search Component Styling
+
 .search-bar {
     position: absolute;
 
@@ -339,7 +325,7 @@ button,
     background: $color-background-light;
     padding: 15px;
     border-radius: 10px;
-    min-width: 140px; // Prevents the text from squashing
+    min-width: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,12 +358,11 @@ button,
     cursor: pointer;
 }
 
-// Transition area between Hero and Features
+
 .section-divider {
-    height: 100px; // Add some "breathing room"
+    height: 100px; 
 }
 
-// Responsive Design
 
 // Large screens (1440px+)
 @media (min-width: 1440px) {
