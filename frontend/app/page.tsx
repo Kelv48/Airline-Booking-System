@@ -7,12 +7,11 @@ export default function Home() {
   return (
     <div className="page">
       <Navbar />
-
       <main className="content">
         <Hero />
+        <div style={{ height: '60px' }} />
         <Features />
       </main>
-
       <Footer />
     </div>
   );
