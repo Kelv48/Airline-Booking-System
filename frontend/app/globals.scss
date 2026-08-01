@@ -166,3 +166,102 @@ button,
         text-align: center;
     }
 }
+
+.navbar {
+    width: 100%;
+    background-color: $color-background-white;
+    border-bottom: 1px solid $color-border;
+    padding: 1rem 2rem; // Added some padding for better alignment
+}
+
+// New Hero & Search sections
+.hero {
+    position: relative;
+    min-height: 80vh; // Covers most of the screen
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    
+    /* The key for the background */
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), 
+                url('/images/hero-plane.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    
+    /* Fallback color if image fails to load */
+    background-color: #f8fbff; 
+}
+
+.hero__content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero__title {
+    font-size: clamp(2rem, 5vw, 4rem); // Responsive font size
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: $color-text-dark;
+}
+
+.hero__subtitle {
+    max-width: 600px;
+    color: $color-text-light;
+    margin-bottom: 40px;
+}
+
+// Search Component Styling
+.search-bar {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid $color-border;
+    display: flex;
+    flex-wrap: wrap; // Allows wrapping on smaller screens
+    justify-content: center;
+    gap: 15px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.search-item {
+    background: $color-background-light;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 140px; // Prevents the text from squashing
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-border;
+    text-align: center;
+
+    .search-item__label {
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    .search-item__subtext {
+        font-size: 0.75rem;
+        color: $color-text-light;
+    }
+}
+
+.btn-search {
+    background: $color-primary;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+// Transition area between Hero and Features
+.section-divider {
+    height: 100px; // Add some "breathing room"
+}
