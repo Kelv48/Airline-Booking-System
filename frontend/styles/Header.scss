@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 80px;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #d7e0dc;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #1f2937;
+    flex-shrink: 0;
+
+    h2 {
+      margin: 0;
+      color: #00843d;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    span {
+      margin-top: 2px;
+      color: #6b7280;
+      font-size: 0.75rem;
+      line-height: 1.2;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+
+      padding: 0.6rem 0.8rem;
+
+      color: #5f6b6d;
+      text-decoration: none;
+
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      border-radius: 8px;
+
+      transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+
+      svg {
+        flex-shrink: 0;
+      }
+
+      &:hover {
+        color: #00843d;
+        background-color: #e8f5ee;
+      }
+    }
+
+    .btn {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+/* --------------------------------
+   Responsive
+-------------------------------- */
+
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    min-height: 80px;
+
+    &__inner {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.75rem;
+    }
+
+    &__brand {
+      align-items: center;
+    }
+
+    &__nav {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__nav {
+      gap: 0.2rem;
+
+      a {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .btn {
+        margin-left: 0.25rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+    .header {
+        height: 80px;
+
+        &__inner {
+            padding: 0 1rem;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__nav {
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+    }
+}
